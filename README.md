@@ -843,3 +843,1307 @@ def pot(base, exp):
     res = base ** exp
     return res
 
+Funcao principal
+
+# 1ª
+# Modo de uso: nomeBilioteca.nomeFuncao - ex: funcao_biblioteca.somar()
+# import funcao_biblioteca
+
+# 2ª
+# Modo de uso: apelidoBiblioteca.nomeFuncao() - ex: fb.somar()
+# import funcao_bibliote as fb
+
+# 3ª
+# Trazendo as funções individualmente
+# Modo de uso: nomeFuncao() - ex: somar()
+#from funcao_biblioteca import somar, subtrair, dividir, multiplicar 
+
+# 4ª
+# Trazer todas as funções da biblioteca 
+# Modo de uso: nomeFuncao() - ex: somar()
+from funcao_biblioteca import *
+
+# Função Principal
+def main():
+    print("-------- Calculadora SENAI ---------")
+
+    num1 = float(input("Digite um numero: "))
+    num2 = float(input("Digite um outro numero: "))
+
+    operacao = input("Digite a operação a ser calculada: ")
+
+    if operacao == '+':
+        resultado = somar(num1, num2)
+        print("O resultado da operação é ", resultado)
+    elif operacao == '-':
+        resultado = subtrair(num1, num2)
+        print("O resultado da operação é ", resultado)
+    elif operacao == '*':
+        resultado = multiplicar(num1, num2)
+        print("O resultado da operação é ", resultado)
+    elif operacao == '/':
+        resultado = dividir(num1, num2) # idade = dividir(2, 9)
+        print("O resultado da operação é ", resultado)
+    else:
+        print("Operação Invalida!!!!")   
+
+
+# Ponto de Entrada para a função MAIN()
+if __name__ == "__main__":
+    main()
+
+Funcoes 01
+
+ef func1():
+    print("Sou a função 1")
+
+def func2():
+    print("Sou a função 2")
+
+def func3():
+    print("Sou a função 3")
+
+
+# Função Principal
+def main():
+    func1()
+    func3()
+    func1()
+    func2()
+
+    print("Sou a função principal")
+
+if __name__ == "__main__":
+    main()
+    
+Ola mundo
+
+# O hashatag é utilizado para colocar um comentário na frente
+# assim o que estiver na frente não será considerado pelo Python
+
+# Instrução print() - Saída na tela
+# A instrução print mostra uma mensagem/texto na tela
+# A mensagem deve estar entre aspas (dupla ou simples)
+print("Ola Mundo!!!, Bem vindo ao SENAI Mauá")
+print('Bom dia, Turma Python 315') 
+
+
+# Instrução input() - Entrada de dados pelo teclado no formato de texto
+# A instrução input recebe um dado digitado e guarda em uma variável
+nome = input("Digite seu nome: ")  # nome é uma variavel para guardar o que será digitado
+print("Ola", nome, "seja bem vindo")
+print(f"Ola {nome} seja bem vindo")
+
+Operadores logicos
+
+n1 = True
+n2 = False
+
+# Operador AND
+res1 = n1 and n2
+print("AND: ", res1)
+
+# Operador OR
+res2 = n1 or n2
+print("OR: ", res1)
+
+# Operador NOT
+res3 = not n1
+print("NOT: ", res3)
+
+Ooperadores matematicos
+
+num1 = 2
+num2 = 3
+
+# Adição
+soma = num1 + num2
+print("Soma: ", soma)
+
+
+# Subtração
+sub = num1 - num2
+print("Subtração: ", sub)
+
+# Multiplicação
+mult = num1 * num2
+print("Multiplicação: " , mult)
+
+# Divisão
+div = num1 / num2
+print("Divisão: ", div)
+
+# Resto
+resto = num2 % num1
+print("Resto: ", resto )
+
+# Exponte
+exp = num1 ** num2
+print("Exponenciação: ", exp)
+
+# Expressões:combinação dos operadores
+# 1º Parênteses ()
+# 2º Multiplicação/Divisão
+# 3º Soma/Subtração
+expressao1 = 2 * (2 * 3) + 1
+print("Expressão: ", expressao1)
+
+Operadores relacionais
+
+# Operadores Relacionais
+# O resultado da operação entre um operador relacional será verdadeiro
+# True ou falso - False
+
+n1 = 3
+n2 = 2
+
+# Igualdade ==
+res1 = (n1 == n2)
+print(res1)
+
+# Diferente !=
+res2 = (n1 != n2)
+print(res2)
+
+# Menor <
+res3 = (n1 < n2)
+print(res3)
+
+# Menor ou igual <=
+res4 = (n1 <= n2)
+print(res4)
+
+# Maior >
+res5 = (n1 > n2)
+print(res5)
+
+# Maior ou igual >=
+res6 = (n1 >= n2)
+print(res6)
+
+Teste
+
+nome = "Teste"
+
+nome = nome.lower()
+
+print (nome)
+
+Variaveis 01
+
+# Variaveis -> espaço dentro da memoria RAM para guardar
+# dados/informações
+
+# Nomes das variáveis:
+# - não podem começar com números: 1num = 20
+# - não podem ter caracteres especiais: preço -> preco
+# - não podem ter espaços: (valor carro), quando 
+# necessário utilizar o _ (underscroll)
+# valor_carro / valorCarro (camel Case)
+# - colocar nomes significativos para as variaveis
+
+# Variáveis do Tipo Número Inteiro (0, 1, 2, -9, 22222222)
+idade = 32
+numero_de_alunos = 15
+numeroAlunos = 15
+temperatura = -3
+
+# Case Sensitive - Sensivel ao caso
+python = 0
+Python = 0
+PYTHON = 0
+pyTHON = 0
+
+# Variáveis do Tipo Real (Números reias / Ponto Flutuante: 1.2,  7.98, 3.1415)
+altura = 1.74
+precoProduto = 19.99
+largura = 15.0
+
+# Variávies do Tipo Strings (Palavras, Frases, Letras, Caracteres)
+# - devem estar entre aspas duplas ou simples
+nome = "Alice"
+mensagem = "Olá, seja bem-vindo!!!"
+endereco = 'Rua das Flores, 123'
+
+# Variáveis do Tipo Booleano (True ou False)
+isPythonFun = True
+hoje_esta_sol = False
+
+print("A idade de Jose eh: ", idade)
+print("Sua altura eh: ", altura)
+print("Seu endereço eh:", endereco)
+print("Hoje está ensolarado? ", hoje_esta_sol)
+
+print(f"Ola {nome}! Voce te, {idade} anos.")
+print("Ola", nome, "! Voce tem", idade, "anos.")
+
+Variaveis 02 p1
+
+# Variável do Tipo Lista (Mutável/Pode ser modificada)
+# a lista utiliza o colchetes para definir seus elementos
+lista_de_frutas = ["pera", "banana", "uva", "mamao"]
+
+
+# Variável do Tipo Tupla (Imutável/NÃO pode ser alterada )
+# a tupla utiliza o parenteses para definir seus elementos
+tupla_de_cores = ("vermelho", "azul", "verde", "preto")
+
+# # Exibir os valores das variáveis
+# print("Minha lista de frutas: ", lista_de_frutas)
+# print("Tupla de cores: ", tupla_de_cores)
+
+# # Acessa elementos especificos
+# # Lista e Tupla sempre o primeiro indice é zero
+# print("A segunda fruta da minha lista eh ", lista_de_frutas[1])
+# print("O segundo elemento da minha tupla eh ", tupla_de_cores[1])
+
+# carros = ["Etios", "Uno", "Mobi", "Up", "Palio", "Onix"]
+# print(carros)
+# print(carros[2])
+# print(carros[5])
+# print(carros[-1])
+# print(carros[1:4])
+# print(carros[:2:-1])
+
+# Variável do Tipo Dicionário
+# - o dicionário utliza chaves para definir seus elementos
+# - o dicionário não tem indice - trabalha com chave e valor (key/value)
+dicionario_de_pessoa = {
+    "nome"  :   "Alice",
+    "idade" :   25,
+    "cidade":   "Mauá",
+    "cpf"   :   12345678910
+}
+
+# Exibir os valor do dicionario
+print("Dicionario de pessoas: ", dicionario_de_pessoa)
+
+# Acessar valores especificos pelas chaves
+print(f"A idade de {dicionario_de_pessoa['nome']} eh {dicionario_de_pessoa['idade']}")
+
+Variaveis 02 p2
+
+# Métodos das listas
+# - funções para modificar as listas,
+
+frutas = ["pera", "limao", "abacate", "limao"]
+
+# print("Original:")
+# print(frutas)
+
+# Append - incluir um elemento no final da lista
+frutas.append("laranja")
+
+# Insert - incluir um elemento em uma posicao determinda da lista
+frutas.insert(0,"uva")
+
+# Remove - remover o 1º elementa encontrado na lista
+frutas.remove("limao")
+
+# Pop - retira um elemento da lista e guarda em uma variavel
+elemento = frutas.pop(2)
+
+# Sort - organizar a lista em ordem crescente
+frutas.sort()
+
+# Reverse - inverter a lista
+frutas.reverse()
+
+# Count - conta quantos elementos do tipo especificado tem na lista
+num_limoes = frutas.count("limao")
+# print(num_limoes)
+
+# print("Modificada:")
+# print(frutas)
+# print(elemento)
+
+cadastro = {
+    "nome"      :   "Jairo",
+    "sobrenome" :   "Candido",
+    "endereco"  :   "Rua Luis Lacava",
+    "cidade"    :   "Maua",
+    "estado"    :   "São Paulo"
+}
+
+# print(cadastro)
+# print( cadastro.keys() )
+# print( cadastro.values() )
+
+# valor = cadastro.get("nome")
+# print(valor)
+
+print(cadastro)
+cadastro.clear()
+print(cadastro)
+
+Classes
+
+class Carro:
+    # Caracteristicas Iniciais do Objeto
+    # Método Construtor: executado automaticamente quando o objeto é criado
+    def __init__(self, marca, modelo):
+        self.ano = 0
+        self.marca = marca
+        self.modelo = modelo
+
+
+    # Funcionalidade (funções -> métodos)
+    def imprimirDados(self):
+        print(f"O carro é da marca {self.marca}  e o modelo dele é {self.modelo}")
+
+
+def main():
+
+    # Criar um Objeto
+    carro1 = Carro("Toyota", "Etios")
+    carro2 = Carro("Fiat", "Uno")
+    
+    carro1.imprimirDados()
+    carro2.imprimirDados()
+
+if __name__ == "__main__":
+    main()
+
+Flet
+
+# Biblioteca Flet (Flutter) - https://flet.dev
+# pip install flet
+# flet run main.py
+
+import flet as ft
+
+def main(page: ft.Page):
+
+    def subtrair(e):
+        numero = int(txt_numero.value)
+        numero -= 1
+        txt_numero.value = str(numero)
+
+        if numero < 10:
+            txt_numero.bgcolor = ft.colors.BLUE        
+
+        page.update()
+
+    def somar(e):
+        numero = int(txt_numero.value)
+        numero += 1
+        txt_numero.value = str(numero)
+
+        if numero >= 10:
+            txt_numero.bgcolor = ft.colors.ORANGE_900
+
+        page.update()
+
+
+
+    page.title = "SENAI - Flet Básico"
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER
+
+    btn_menos = ft.IconButton(ft.icons.REMOVE, on_click=subtrair)
+    btn_mais = ft.IconButton(ft.icons.ADD, on_click=somar)
+
+    txt_numero = ft.TextField(
+        value="0",
+        bgcolor=ft.colors.BLUE,
+        width=100,
+        border_radius=20,
+        text_align=ft.TextAlign.CENTER,
+        read_only=True,
+        color=ft.colors.BLACK87
+    )
+
+    page.add(
+        ft.Row(
+            [
+                btn_menos,
+                txt_numero,
+                btn_mais
+            ],
+            alignment=ft.MainAxisAlignment.CENTER
+        )               
+    )
+ft.app(target=main)
+
+Pygame
+
+bat
+
+import pygame
+import random
+
+class Bat(pygame.sprite.Sprite):
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        self.image = pygame.image.load("data/bat-x4.gif")
+        self.image = pygame.transform.scale(self.image, [100,100])
+        self.rect = pygame.Rect(900, 50, 100, 100)
+
+        self.rect.x = 840 + random.randint(1,400)
+        self.rect.y = random.randint(2, 400)
+
+        self.speed = 1 + random.random() * 2
+
+    def update(self, *args):
+
+        self.rect.x -= self.speed
+
+        if self.rect.right < 0:
+            self.kill()
+
+Ghost
+
+import pygame
+
+class Ghost(pygame.sprite.Sprite):
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        # Carregar a imagem para uso
+        self.image = pygame.image.load("data/ghost-x4.gif")
+        # Redimensionar a imagem para completar nosso retângulo em 100%
+        self.image = pygame.transform.scale(self.image, [100, 100])
+        # Posicionando e dimensionando o retangulo na tela
+        self.rect = pygame.Rect(50, 50, 100, 100)
+
+        self.speedX = 0
+        self.accelerationX = 0.1
+
+        self.speedY = 0
+        self.accelerationY = 0.1
+
+    def update(self, *args):
+
+        # Evento Movimentação
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_DOWN]:
+            self.speedY += self.accelerationY
+        elif keys[pygame.K_UP]:
+            self.speedY -= self.accelerationY
+        if keys[pygame.K_RIGHT]:
+            self.speedX += self.accelerationX
+        elif keys[pygame.K_LEFT]:
+            self.speedX -= self.accelerationX
+        else:
+            self.speedY *= 0.95
+            self.speedX *= 0.95
+
+        self.rect.y += self.speedY
+        self.rect.x += self.speedX
+
+        # Limite de Tela
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.speedY = 0
+        elif self.rect.bottom > 480:
+            self.rect.bottom = 480
+            self.speedY = 0
+        elif self.rect.left < 0:
+            self.rect.left = 0
+            self.speedX = 0
+        elif self.rect.right > 840:
+            self.rect.right = 840
+            self.speedX = 0
+
+Main
+
+# 0. Criar uma instalação Desktop ------------------------------------
+
+# PASSO 1: Digitar o seguinte código comentado abaixo:
+
+# Importa os módulos os (para interagir com o sistema operacional) e 
+# sys (para acessar variáveis e funções do interpretador Python).
+import os, sys  
+
+# Obtém o caminho completo do diretório onde o script está sendo executado e armazena em dirpath.
+dirpath = os.getcwd()  
+
+# Adiciona o diretório atual ao caminho de busca do Python. Isso permite que o Python encontre módulos 
+# localizados no mesmo diretório que o script. No caso as subpastas com os assets
+sys.path.append(dirpath)  
+
+# Verifica se o script está sendo executado como um executável compilado 
+# (por exemplo, usando PyInstaller).
+if getattr(sys, "frozen", False):  
+    os.chdir(sys._MEIPASS)  # Se estiver compilado, muda o diretório de trabalho atual 
+                            # para o diretório onde os arquivos do aplicativo foram extraídos.
+
+
+# PASSO 2: Após a inserção do código acima instalar o pyinstaller no terminal com o comando: 
+#  - pip install pyinstaller    
+
+
+# PASSO 3: Executar o seguinte comando no terminal (o parametro -F é para colocar em um único arquivo):
+#  - pyinstaller -F main.py
+
+# PASSO 4: Abrir o arquivo main.spec e alterar o item: datas=[("data", "data")] como mostrado abaixo
+#  a = Analysis(
+#     ['main.py'],
+#     pathex=[],
+#     binaries=[],
+#     datas=[("data", "data")],
+#     hiddenimports=[],
+#     hookspath=[],
+#     hooksconfig={},
+#     runtime_hooks=[],
+#     excludes=[],
+#     noarchive=False,
+#     optimize=0,
+# )
+
+# PASSO 5: Executar o seguinte comando no terminal:
+#  - pyinstaller main.spec
+
+# PASSO 6: Verificar o arquivo executavel na pasta dist
+
+
+# Pygame:
+#   - Instalar a biblioteca no terminal: pip install pygame
+
+
+# 1. IMPORTS -------------------------------------------------------------------
+import pygame
+import random
+
+from ghost import Ghost
+from bat import Bat
+from shoot import Shoot
+
+
+# 2. INICIALIZAÇÃO--------------------------------------------------------------
+
+# 2.1 Iniciar Pygame
+pygame.init()
+
+# 2.2 Iniciar a janela com a configuração de resolução de 840x480
+
+# 2.2.1 Constantes de largura e altura de tela
+LARGURA_TELA = 840
+ALTURA_TELA = 480
+
+# 2.2.2 Criar a janela
+display = pygame.display.set_mode([LARGURA_TELA, ALTURA_TELA])
+
+# 2.2.3 Preencher o fundo da janela com uma cor RGB
+display.fill([66, 135, 245])
+# 2.2.4 Preencher o fundo da janela com uma cor em HEX
+# display.fill("#4287f5")
+
+# 2.2.5 Mudar o título da janela
+pygame.display.set_caption("Game SENAI - Python 315")
+
+# 2.2.6 Carregar a imagem do icone e mudar o icone da janela
+icone = pygame.image.load("data/icone.png")
+pygame.display.set_icon(icone)
+
+
+# 3. ELEMENTOS DE TELA ---------------------------------------------------------
+
+# 3.1 Personagens
+
+# Criar um grupo de imagens para inserir todas as imagens e desenhar elas de uma 
+# única vez 
+objectGroup = pygame.sprite.Group()
+batGroup = pygame.sprite.Group()
+shootGroup = pygame.sprite.Group()
+
+# Criar um cenário (background) para o fantasma
+bg = pygame.sprite.Sprite(objectGroup)
+bg.image = pygame.image.load("data/background.jpg")
+bg.image = pygame.transform.scale(bg.image, [840, 480])
+bg.rect = bg.image.get_rect()
+
+# Criar um objeto da Classe Ghost e coloco no grupo objectGroup
+ghost = Ghost(objectGroup)
+
+# 3.2 Fontes ------------------------------------------------------------------
+score_font = pygame.font.Font("data/Pixeltype.ttf", 50)
+gameOver_font = pygame.font.Font("data/Pixeltype.ttf", 200)
+
+# 3.3 Música ------------------------------------------------------------------
+pygame.mixer.music.load("data/alienblues.wav")
+pygame.mixer.music.play(-1) # -1 para ser um loop infinito
+
+# 3.4 Som (SFX) ------------------------------------------------------------------
+attack = pygame.mixer.Sound("data/magic1.wav")
+
+
+# 4. VARIAVEIS GLOBAIS ---------------------------------------------------------
+gameLoop = True
+gameOver = False
+
+timer = 20
+pontos = 0
+
+
+# 4.1 Criar um clock para ajustar os frames por segundo (fps)
+clock = pygame.time.Clock()
+
+
+
+# 5. FUNÇÃO PRINCIPAL ----------------------------------------------------------
+def main():
+
+    global gameLoop
+    global gameOver
+    global timer
+    global pontos
+   
+    while gameLoop:
+        # Clock de 60fps
+        clock.tick(60)
+
+        # Loop de Eventos - Event Loop
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                gameLoop = False
+            elif event.type == pygame.KEYDOWN: # Evento Tiros
+                if event.key == pygame.K_SPACE:
+                    if Shoot.numTiros < 5:
+                        newShoot = Shoot(objectGroup, shootGroup)
+                        newShoot.rect.center = ghost.rect.center
+                        attack.play()
+
+        if not gameOver:
+                
+            display.fill([66, 135, 245])
+
+            # Criar varios morcegos
+            timer += 1
+            if timer > 30:
+                timer = 0
+                if random.random() < 0.3:
+                    newBat = Bat(objectGroup, batGroup) 
+
+            # Colisao dos Morcegos com o Fantasma
+            colisao = pygame.sprite.spritecollide(
+                ghost,
+                batGroup,
+                False,
+                pygame.sprite.collide_mask
+            )
+
+            if colisao:
+                gameOver = True
+                print("GAME OVER!!!")
+
+            # Colisao do tiro com o morcego
+            tiros = pygame.sprite.groupcollide(
+                shootGroup,
+                batGroup,
+                True,
+                True,
+                pygame.sprite.collide_mask
+            )
+
+            if tiros:
+                pontos += 1
+                print("SCORE: ", pontos)
+                Shoot.subtrairTiros()
+
+            # Atualizar a posição do objetos
+            objectGroup.update()
+
+        # Desenhar na tela
+        objectGroup.draw(display)
+
+        # Inserir a pontuação na tela
+        score_render = score_font.render(f"Score: {pontos}", False, "White")
+        display.blit(score_render, (650,50))
+
+        # Inserir a mensagem GAME OVER na tela
+        if gameOver:
+            gameOverMsg = gameOver_font.render("GAME OVER", False, "White")
+            display.blit(gameOverMsg, (100,150))
+
+        # Atualização da tela
+        pygame.display.update()
+
+
+if __name__ == "__main__":
+    main()
+
+README
+
+<h1>Desenvolvimento de Jogos - Pilares</h1>
+
+1. Janelas
+    - Criar janelas para o nosso sistema/jogo
+
+2. Reconhecer os Inputs (Interação com o Jogador)
+    - Teclado,
+    - Mouse,
+    - etc...
+
+3. Pintar e desenhar coisas na tela (janela)
+    - Animação
+
+4. Lógica
+    - Executar lógicas para a dinâmica do jogo,
+    - Física
+
+5. Áudio - como o som trabalha ajundando o desenrolar do jogo
+    - Música,
+    - Efeitos
+  
+Shoot
+
+import pygame
+
+class Shoot(pygame.sprite.Sprite):
+    
+    numTiros = 0
+
+    @staticmethod
+    def somarTiros():
+        Shoot.numTiros += 1
+    
+    @staticmethod
+    def subtrairTiros():
+        Shoot.numTiros -= 1
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        self.image = pygame.image.load("data/shot.png")
+        self.image = pygame.transform.scale(self.image, [50,50])
+
+        # self.rect = pygame.Rect(50, 50, 100, 100)
+        self.rect = self.image.get_rect()
+        
+        self.speed = 4
+
+        Shoot.somarTiros()
+
+    def update(self, *args):
+
+        self.rect.x += self.speed
+
+        if self.rect.left > 840:
+            self.kill()
+            Shoot.subtrairTiros()
+
+Pygame - Upgrade
+
+bat
+
+import pygame
+import random
+
+class Bat(pygame.sprite.Sprite):
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        self.image = pygame.image.load("data/bat-x4.gif")
+        self.image = pygame.transform.scale(self.image, [100,100])
+        self.rect = pygame.Rect(900, 50, 100, 100)
+
+        self.rect.x = 840 + random.randint(1,400)
+        self.rect.y = random.randint(2, 400)
+
+        self.speed = 1 + random.random() * 2
+
+    def update(self, *args):
+
+        self.rect.x -= self.speed
+
+        if self.rect.right < 0:
+            self.kill()
+
+ghost
+
+import pygame
+
+class Ghost(pygame.sprite.Sprite):
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        # Carregar a imagem para uso
+        self.image = pygame.image.load("data/ghost-x4.gif")
+        # Redimensionar a imagem para completar nosso retângulo em 100%
+        self.image = pygame.transform.scale(self.image, [100, 100])
+        # Posicionando e dimensionando o retangulo na tela
+        self.rect = pygame.Rect(50, 50, 100, 100)
+
+        self.speedX = 0
+        self.accelerationX = 0.1
+
+        self.speedY = 0
+        self.accelerationY = 0.1
+
+    def update(self, *args):
+
+        # Evento Movimentação
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]:
+            self.speedY += self.accelerationY
+        elif keys[pygame.K_UP] or keys[pygame.K_w]:
+            self.speedY -= self.accelerationY
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
+            self.speedX += self.accelerationX
+        elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
+            self.speedX -= self.accelerationX
+        else:
+            self.speedY *= 0.95
+            self.speedX *= 0.95
+
+        self.rect.y += self.speedY
+        self.rect.x += self.speedX
+
+        # Limite de Tela
+        if self.rect.top < 0:
+            self.rect.top = 0
+            self.speedY = 0
+        elif self.rect.bottom > 480:
+            self.rect.bottom = 480
+            self.speedY = 0
+        elif self.rect.left < 0:
+            self.rect.left = 0
+            self.speedX = 0
+        elif self.rect.right > 840:
+            self.rect.right = 840
+            self.speedX = 0
+
+main
+
+# 0. Criar uma instalação Desktop ------------------------------------
+
+# PASSO 1: Digitar o seguinte código comentado abaixo:
+
+# Importa os módulos os (para interagir com o sistema operacional) e 
+# sys (para acessar variáveis e funções do interpretador Python).
+import os, sys  
+
+# Obtém o caminho completo do diretório onde o script está sendo executado e armazena em dirpath.
+dirpath = os.getcwd()  
+
+# Adiciona o diretório atual ao caminho de busca do Python. Isso permite que o Python encontre módulos 
+# localizados no mesmo diretório que o script. No caso as subpastas com os assets
+sys.path.append(dirpath)  
+
+# Verifica se o script está sendo executado como um executável compilado 
+# (por exemplo, usando PyInstaller).
+if getattr(sys, "frozen", False):  
+    os.chdir(sys._MEIPASS)  # Se estiver compilado, muda o diretório de trabalho atual 
+                            # para o diretório onde os arquivos do aplicativo foram extraídos.
+
+
+# PASSO 2: Após a inserção do código acima instalar o pyinstaller no terminal com o comando: 
+#  - pip install pyinstaller    
+
+
+# PASSO 3: Executar o seguinte comando no terminal (o parametro -F é para colocar em um único arquivo):
+#  - pyinstaller -F main.py
+
+# PASSO 4: Abrir o arquivo main.spec e alterar o item: datas=[("data", "data")] como mostrado abaixo
+#  a = Analysis(
+#     ['main.py'],
+#     pathex=[],
+#     binaries=[],
+#     datas=[("data", "data")],
+#     hiddenimports=[],
+#     hookspath=[],
+#     hooksconfig={},
+#     runtime_hooks=[],
+#     excludes=[],
+#     noarchive=False,
+#     optimize=0,
+# )
+
+# PASSO 5: Executar o seguinte comando no terminal:
+#  - pyinstaller main.spec
+
+# PASSO 6: Verificar o arquivo executavel na pasta dist
+
+#########################################################################################################
+# Pygame:
+#   - Instalar a biblioteca no terminal: pip install pygame
+
+
+# 1. IMPORTS -------------------------------------------------------------------
+import pygame
+import random
+
+from ghost import Ghost
+from bat import Bat
+from shoot import Shoot
+from pumpkin import Pumpkin
+
+
+# 2. INICIALIZAÇÃO--------------------------------------------------------------
+
+# 2.1 Iniciar Pygame
+pygame.init()
+
+# 2.2 Iniciar a janela com a configuração de resolução de 840x480
+
+# 2.2.1 Constantes de largura e altura de tela
+LARGURA_TELA = 840
+ALTURA_TELA = 480
+
+# 2.2.2 Criar a janela
+display = pygame.display.set_mode([LARGURA_TELA, ALTURA_TELA])
+
+# 2.2.3 Preencher o fundo da janela com uma cor RGB
+display.fill([66, 135, 245])
+# 2.2.4 Preencher o fundo da janela com uma cor em HEX
+# display.fill("#4287f5")
+
+# 2.2.5 Mudar o título da janela
+pygame.display.set_caption("Game SENAI - Python 315")
+
+# 2.2.6 Carregar a imagem do icone e mudar o icone da janela
+icone = pygame.image.load("data/icone.png")
+pygame.display.set_icon(icone)
+
+
+# 3. ELEMENTOS DE TELA ---------------------------------------------------------
+
+# 3.1 Personagens
+
+# Criar um grupo de imagens para inserir todas as imagens e desenhar elas de uma 
+# única vez 
+objectGroup = pygame.sprite.Group()
+batGroup = pygame.sprite.Group()
+shootGroup = pygame.sprite.Group()
+
+
+# 3.2 Fontes ------------------------------------------------------------------
+score_font = pygame.font.Font("data/Pixeltype.ttf", 50)
+gameOver_font = pygame.font.Font("data/Pixeltype.ttf", 200)
+
+# 3.3 Música ----------------------------------------------------------
+pygame.mixer.music.load("data/alienblues.wav")
+pygame.mixer.music.play(-1)  # -1 para ser um loop infinito
+
+# 3.4 Som (SFX) ------------------------------------------------------
+attack = pygame.mixer.Sound("data/magic1.wav")
+
+# 4. VARIAVEIS GLOBAIS ---------------------------------------------------------
+gameLoop = True
+gameOver = False
+
+timer = 20
+pontos = 0
+
+numSetupFase = 1
+numfase = 1
+
+vidas = 3
+
+# 4.1 Criar um clock para ajustar os frames por segundo (fps)
+clock = pygame.time.Clock()
+
+
+# 5. FUNÇÃO PRINCIPAL ----------------------------------------------------------
+def main():
+
+    global gameLoop
+    global gameOver
+    global timer
+    global pontos
+    global numSetupFase
+    global numfase
+    global vidas
+   
+
+    while gameLoop:
+        # Clock de 60fps
+        clock.tick(60)
+
+
+        if numSetupFase == 1:
+            # Criar um cenário (background) para o fantasma
+            bg = pygame.sprite.Sprite(objectGroup)
+            bg.image = pygame.image.load("data/background.jpg")
+            bg.image = pygame.transform.scale(bg.image, [840, 480])
+            bg.rect = bg.image.get_rect()
+
+            # Criar um objeto da Classe Ghost e coloco no grupo objectGroup
+            ghost = Ghost(objectGroup)
+
+            numSetupFase = 0
+            numfase = 1
+
+        if numSetupFase == 2:
+            # Criar um cenário (background) para o fantasma
+            bg = pygame.sprite.Sprite(objectGroup)
+            bg.image = pygame.image.load("data/bg_fase2.jpg")
+            bg.image = pygame.transform.scale(bg.image, [840, 480])
+            bg.rect = bg.image.get_rect()
+
+            # Criar um objeto da Classe Ghost e coloco no grupo objectGroup
+            ghost = Ghost(objectGroup)
+
+            numSetupFase = 0
+            numfase = 2
+
+        # Loop de Eventos - Event Loop
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                gameLoop = False
+            elif event.type == pygame.KEYDOWN: # Evento Tiros
+                if event.key == pygame.K_SPACE:
+                    if Shoot.numTiros < 5:
+                        newShoot = Shoot(objectGroup, shootGroup)
+                        newShoot.rect.center = ghost.rect.center
+                        attack.play()
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                if Shoot.numTiros < 5:
+                    newShoot = Shoot(objectGroup, shootGroup)
+                    newShoot.rect.center = ghost.rect.center
+                    attack.play()
+
+        if not gameOver:
+                
+            
+            timer += 1
+
+            # Criar varios morcegos
+            if timer > 30 and numfase == 1:
+                timer = 0
+                if random.random() < 0.3:
+                    newBat = Bat(objectGroup, batGroup) 
+
+            # Criar varios morcegos e aboboras
+            if timer > 30 and numfase == 2:
+                timer = 0
+                if random.random() < 0.45:
+                    newBat = Bat(objectGroup, batGroup) 
+                if random.random() < 0.25:
+                    newPumpkin = Pumpkin(objectGroup, batGroup) 
+
+            # Colisao dos Morcegos com o Fantasma
+            colisao = pygame.sprite.spritecollide(
+                ghost,
+                batGroup,
+                True,
+                pygame.sprite.collide_mask
+            )
+
+            if colisao:
+                vidas -= 1
+                
+            if vidas == 0:
+                gameOver = True
+
+            # Colisao do tiro com o morcego
+            tiros = pygame.sprite.groupcollide(
+                shootGroup,
+                batGroup,
+                True,
+                True,
+                pygame.sprite.collide_mask
+            )
+
+            if tiros:
+                pontos += 1
+                Shoot.subtrairTiros()
+
+                if pontos ==  10:
+                    ghost.kill()
+                    numSetupFase = 2
+
+            # Atualizar a posição do objetos
+            objectGroup.update()
+
+        # Desenhar na tela
+        objectGroup.draw(display)
+
+        # Inserir a pontuação na tela
+        score_render = score_font.render(f"Score: {pontos}", False, "White")
+        display.blit(score_render, (650,50))
+
+        # Vidas
+        score_render = score_font.render(f"Life: {vidas}", False, "White")
+        display.blit(score_render, (50,50))
+
+        # Inserir a mensagem GAME OVER na tela
+        if gameOver:
+            gameOverMsg = gameOver_font.render("GAME OVER", False, "White")
+            display.blit(gameOverMsg, (100,150))
+
+        # Atualização da tela
+        pygame.display.update()
+
+if __name__ == "__main__":
+    main()
+
+pumpkin
+
+import pygame
+import math
+import random
+
+class Pumpkin(pygame.sprite.Sprite):
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        self.image = pygame.image.load("data/pumpkin2-removebg.png")
+        self.image = pygame.transform.scale(self.image, [100,100])
+        self.rect = pygame.Rect(900, 50, 100, 100)
+
+
+        self.rect.x = 840 + random.randint(1,400)
+        self.rect.y = random.randint(2, 400)
+
+        self.speed = 1 + random.random() * 2
+
+        self.timer = 0
+
+    def update(self, *args):
+
+        self.timer += 0.001
+
+        self.rect.x -= self.speed
+
+        self.rect.y = self.rect.y + ( math.sin(self.timer) * 2)
+
+        if self.rect.right < 0 or self.rect.top > 500:
+            self.kill()
+
+
+README
+
+<h1>Desenvolvimento de Jogos - Pilares</h1>
+
+1. Janelas
+    - Criar janelas para o nosso sistema/jogo
+
+2. Reconhecer os Inputs (Interação com o Jogador)
+    - Teclado,
+    - Mouse,
+    - etc...
+
+3. Pintar e desenhar coisas na tela (janela)
+    - Animação
+
+4. Lógica
+    - Executar lógicas para a dinâmica do jogo,
+    - Física
+
+5. Áudio - como o som trabalha ajundando o desenrolar do jogo
+    - Música,
+    - Efeitos
+  
+shoot
+
+import pygame
+
+class Shoot(pygame.sprite.Sprite):
+    
+    numTiros = 0
+
+    @staticmethod
+    def somarTiros():
+        Shoot.numTiros += 1
+    
+    @staticmethod
+    def subtrairTiros():
+        Shoot.numTiros -= 1
+
+    def __init__(self, *groups):
+        super().__init__(*groups)
+
+        self.image = pygame.image.load("data/shot.png")
+        self.image = pygame.transform.scale(self.image, [50,50])
+
+        # self.rect = pygame.Rect(50, 50, 100, 100)
+        self.rect = self.image.get_rect()
+        
+        self.speed = 4
+
+        Shoot.somarTiros()
+
+    def update(self, *args):
+
+        self.rect.x += self.speed
+
+        if self.rect.left > 840:
+            self.kill()
+            Shoot.subtrairTiros()
+
+SQLite
+
+main
+
+import sqlite3
+
+def main():
+
+    # 1. Conectar com o bando de dados
+    #   - Criar uma conexão e um cursor. O cursor será utilizado
+    # para executar querys(CRUD)
+    #   - Caso o banco de dados não exista a biblioteca sqlite
+    #  irá criar 
+    conn = sqlite3.connect("db_python.db")
+    cursor = conn.cursor()
+
+    # 2. Executar Querys - CRUD
+
+    # -------------------- Criar Tabela 
+    # queryTabela = '''CREATE TABLE IF NOT EXISTS "Contatos" (
+    #     "id"        INTEGER,
+    #     "nome"      TEXT,
+    #     "sobrenome" TEXT,
+    #     "email"     TEXT,
+    #     PRIMARY KEY( "id" AUTOINCREMENT)    
+    # );'''
+
+    # cursor.execute(queryTabela)
+
+    # -------------------------- Inserir Dados
+    # nome = input("Digite o nome: ")
+    # sobrenome = input("Digite o sobrenome: ")
+    # email = input("Digite o email: ")
+
+    # queryInsert = f'''INSERT INTO Contatos (nome, sobrenome, email)
+    #     VALUES("{nome}", "{sobrenome}", "{email}")
+
+    # ;'''
+
+    # cursor.execute(queryInsert)
+
+    # ------------------- Atualizar dados : EMAIL
+    # email = input("Digite o novo email: ")
+    # num_registro = int(input("Digite o numero do registro: "))
+
+    # queryUpdate = f'''UPDATE Contatos SET email="{email}" 
+    #     WHERE id="{num_registro}";'''
+    
+    # cursor.execute(queryUpdate)
+
+    # --------------------- Apagar Registro
+    # num_registro = int(input("Digite o numero do registro: "))
+
+    # queryDelete = f'''DELETE FROM Contatos 
+    #     WHERE id="{num_registro}";'''
+    
+    # cursor.execute(queryDelete)
+    
+    # ---------------------- Selecionar Registros
+    querySelect = '''SELECT * FROM Contatos;'''
+
+    resultadoSelect = cursor.execute(querySelect)
+
+    for valor in resultadoSelect:
+        print(valor)
+
+    # 3. Efetivar as Querys dentro do BD - Commit
+    #  OBS: Não é necessário para o SELECT
+    conn.commit()
+
+
+    # 4. Fechar a conexão com o BD (Finalizar a transação)
+    conn.close()
+
+
+if __name__ == "__main__":
+    main()
