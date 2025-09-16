@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="766"/><column_width id="4" width="0"/></tab_structure><tab_browse><table title="." custom_title="0" dock_id="2" table="0,0:"/><dock_state state="000000ff00000000fd00000001000000020000033c0000027efc0100000002fb000000160064006f0063006b00420072006f007700730065003101000000000000033c0000000000000000fb000000160064006f0063006b00420072006f007700730065003201000000000000033c0000011e00ffffff0000025e0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO Contatos (nome, sobrenome, email) 
+	VALUES (&quot;Erica&quot;, &quot;Lins&quot;, &quot;lins@sp.br&quot;),
+		   (&quot;Leno&quot;, &quot;Pedreira&quot;, &quot;leno@sp.br&quot;);
+		   
+		   
+-- UPDATE nomeTabela SET campos=novoValor WHERE id=registroQueSeraAlterado
+UPDATE Contatos SET sobrenome=&quot;Souza&quot; , email=&quot;pedro@sp.br&quot; 
+	WHERE id=5
+	
+-- READ - Leitura de Valores
+-- * = todos os registros
+SELECT * FROM Contatos
+
+-- SELECT nomeColuna FROM nomeTabela
+SELECT nome FROM Contatos
+
+-- WHERE: vai funcionar como um filtro
+SELECT * FROM Contatos WHERE sobrenome=&quot;Souza&quot;
+
+-- DELETE - Apagar um registro
+DELETE FROM Contatos WHERE id=4</sql><current_tab id="0"/></tab_sql></sqlb_project>
