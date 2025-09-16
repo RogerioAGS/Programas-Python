@@ -1,7 +1,7 @@
 Agenda_SQLite
-
+    
 import sql_funcoes as sf
-
+    
 def menuPrincipal():
     os.system("cls")
     print("1 - Inserir Novo Registro")
