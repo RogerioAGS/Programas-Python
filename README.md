@@ -1,4 +1,4 @@
-AAgenda SQLite
+Agenda SQLite
 
 import sql_funcoes as sf
 
