@@ -1,7 +1,7 @@
-Agenda_SQLite
-    
+AAgenda SQLite
+
 import sql_funcoes as sf
-    
+
 def menuPrincipal():
     os.system("cls")
     print("1 - Inserir Novo Registro")
@@ -119,4 +119,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()# Programas-Python
+    main()
